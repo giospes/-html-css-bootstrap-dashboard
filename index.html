@@ -24,13 +24,38 @@
                         <li class="px-2"><i class="fa-solid fa-question "></i></li>
                         <li class="px-2"><i class="fa-solid fa-ellipsis-vertical"></i></li>
                     </ul>
-                    <i class="fa-solid fa-bell"></i>
+                    
+                    <button  type="button" class="btn btn-secondary bg-transparent border-0 p-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on bottom">
+                        <i class="fa-solid fa-bell text-danger "></i>
+                    </button>
+
                 </div>
             </nav>
         </header>  
         <main class="d-flex align-items-stretch">
-            <aside class="gs-left">
-                <nav>Nav Laterale</nav>
+            <aside class="gs-left text-white">
+                <nav class="d-flex flex-column justify-content-between h-100 p-4">
+                    <ul class="d-flex flex-column justify-content-center align-items-center">
+                        <li class="d-flex justify-content-between w-100 px-1">
+                            <i class="fa-solid fa-house"></i>
+                            <span class=" ">Home</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span class="">Stats</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="">Signal</span>
+                        </li>  
+                    </ul>
+                    <ul class="d-flex flex-column justify-content-center align-items-center">
+                        <li class="justify-self-end mb-auto">                 
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <span class="">Admin</span>
+                        </li>
+                    </ul>
+                </nav>
             </aside>
             <div class="gs-right bg-body-tertiary flex-grow-1 overflow-auto">
                 <section id="jumbo" class="bg-primary">jumbo</section>
@@ -51,7 +76,8 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
 </body>
 </html>
