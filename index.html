@@ -39,35 +39,36 @@
                 </div>
             </nav>
         </header>  
-        <main class="d-flex align-items-stretch">
+        <main class="d-flex align-items-stretch ">
             <aside class="gs-left text-white fw-bold">
                 <nav class="d-flex flex-column justify-content-between h-100 p-3">
                     <ul class="d-flex flex-column justify-content-center align-items-center ">
-                        <li class="mb-2">
+                        <li class="mb-3 d-flex align-items-center">
                             <i class="fa-solid fa-house"></i>
-                            <span class="ms-3">Home</span>
+                            <span class="ms-3 d-none d-md-inline-block">Home</span>
                         </li>
-                        <li class="mb-2">
+                        <li class="mb-3 d-flex align-items-center">
                             <i class="fa-solid fa-chart-line"></i>
-                            <span class="ms-3">Stats</span>
+                            <span class="ms-3 d-none d-md-inline-block">Stats</span>
                         </li>
-                        <li class="">
+                        <li class="d-flex align-items-center">
                             <i class="fa-solid fa-signal"></i>
-                            <span class="ms-3">Signal</span>
+                            <span class="ms-3 d-none d-md-inline-block">Signal</span>
                         </li>  
                     </ul>
                     <ul class="d-flex flex-column justify-content-center align-items-center">
-                        <li class="justify-self-end mb-auto">                 
+                        <li class="justify-self-end mb-auto d-flex align-items-center">                 
                             <i class="fa-solid fa-screwdriver-wrench"></i>
-                            <span class="ms-3">Admin</span>
+                            <span class="ms-3 d-none d-md-inline-block">Admin</span>
                         </li>
                     </ul>
                 </nav>
             </aside>
+
             <div class="gs-right bg-body-tertiary flex-grow-1 overflow-auto text-white">
-                <section id="jumbo" class="bg-primary w-100 p-3">
-                    <div id="add-student">
-                        <span class=" pe-3">Nuovo Studente</span>
+                <section id="jumbo" class="bg-primary w-100 p-3  pe-0 pe-sm-3 d-flex flex-column flex-sm-row justify-content-between ">
+                    <div id="add-student" class="mb-2 order-sm-3">
+                        <span class="pe-2">Nuovo Studente</span>
                         <button class="btn btn-primary border-1 border-white py-1 px-2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
@@ -79,25 +80,28 @@
                             </div>
                         </div>
                     </div>
-                    <div id="badge-menu">
-                        <h3 class="d-inline-block">Boolean</h3>
+                    <div id="badge-menu" class="mb-2 flex-shrink-0 pe-3">
+                        <h3 class="d-inline-block mb-0">Boolean</h3>
                         <span id="bool-pill" class="badge rounded-pill gs-pill ms-2">Primary</span>
-                        <nav class="d-flex  navbar navbar-expand-md justify-content-start ">
-                                <ul class="mt-2">
-                                    <li><span class="badge rounded-pill gs-pill">3 app</span><i class="fa-solid fa-angles-right px-2"></i></li>
+                        <nav class="d-flex  navbar navbar-expand-md justify-content-start pt-0 ">
+                            <ul class="mt-2">
+                                <li><span class="badge rounded-pill gs-pill">3 app</span><i class="fa-solid fa-angles-right px-2"></i></li>
+                            </ul>
+                            <button class="mt-2 badge rounded-pill gs-pill p-1 navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent1" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <div class="collapse navbar-collapse"  id="navbarToggleExternalContent1">
+                                <ul class="d-flex flex-wrap mt-2">
+                                    <li><span class="badge rounded-pill gs-pill">Boolean mobile app</span></li>
+                                    <li><span class="badge rounded-pill gs-pill mx-2">Boolean web app</span></li>
+                                    <li><span class="badge rounded-pill gs-pill ">Boolean Blog</span></li>
                                 </ul>
-                                <button class="mt-2 badge rounded-pill gs-pill p-1 navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent1" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                                <div class="collapse navbar-collapse"  id="navbarToggleExternalContent1">
-                                    <ul class="d-flex mt-2">
-                                        <li><span class="badge rounded-pill gs-pill">Boolean mobile app</span></li>
-                                        <li><span class="badge rounded-pill gs-pill ms-2">Boolean web app</span></li>
-                                        <li><span class="badge rounded-pill gs-pill ms-2">Boolean Blog</span></li>
-                                    </ul>
-                                </div>
-
+                            </div>
                         </nav>
+                    </div>
+                    <div id="studenti-online" class="">
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
+                        <span class="fs-4">104</span>
                     </div>
                 </section>
                 <section id="prossime-classi"> Prossime classi</section>
