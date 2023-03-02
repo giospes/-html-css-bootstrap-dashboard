@@ -50,4 +50,8 @@ ul{
     position: absolute;
     top: 0;
     --bs-tooltip-bg: var(--bs-primary);
-  }
+}
+
+#gs-drop-menu{
+    left: -140px;
+}
