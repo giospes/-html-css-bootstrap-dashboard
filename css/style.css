@@ -77,3 +77,7 @@ ul{
     border-radius: 50%;
     overflow: hidden;
 }
+
+.gs-not-shrink{
+    min-width: 110px;
+}
