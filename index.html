@@ -41,23 +41,23 @@
         </header>  
         <main class="d-flex align-items-stretch ">
             <aside class="gs-left text-white fw-bold">
-                <nav class="d-flex flex-column justify-content-between h-100 p-3">
-                    <ul class="d-flex flex-column justify-content-center align-items-center ">
-                        <li class="mb-3 d-flex align-items-center">
+                <nav class="d-flex flex-column justify-content-between px-2 h-100">
+                    <ul class="d-flex flex-column justify-content-center align-items-center py-3 ">
+                        <li class="mb-3 d-flex align-items-center gs-aside-element py-1 px-2">
                             <i class="fa-solid fa-house"></i>
                             <span class="ms-3 d-none d-md-inline-block">Home</span>
                         </li>
-                        <li class="mb-3 d-flex align-items-center">
+                        <li class="mb-3 d-flex align-items-center gs-aside-element py-1 px-3">
                             <i class="fa-solid fa-chart-line"></i>
                             <span class="ms-3 d-none d-md-inline-block">Stats</span>
                         </li>
-                        <li class="d-flex align-items-center">
+                        <li class="d-flex align-items-center gs-aside-element py-1 px-2">
                             <i class="fa-solid fa-signal"></i>
                             <span class="ms-3 d-none d-md-inline-block">Signal</span>
                         </li>  
                     </ul>
-                    <ul class="d-flex flex-column justify-content-center align-items-center">
-                        <li class="justify-self-end mb-auto d-flex align-items-center">                 
+                    <ul class="d-flex flex-column justify-content-center align-items-center py-3">
+                        <li class="justify-self-end mb-auto d-flex align-items-center gs-aside-element py-1 px-2">                 
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                             <span class="ms-3 d-none d-md-inline-block">Admin</span>
                         </li>
@@ -70,13 +70,72 @@
                     <div id="add-student" class="mb-2 order-sm-3">
                         <span class="pe-2">Nuovo Studente</span>
                         <button class="btn btn-primary border-1 border-white py-1 px-2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas offcanvas-end gs-off-width" tabindex="-1" data-bs-scroll="true" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                            
+                                <form class="d-flex  flex-wrap" action="#">
+                                    <div class="mb-3 col-12 col-sm-6  pe-1">
+                                        <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 col-12 col-sm-6  ps-1">
+                                        <label for="exampleInputPassword1" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 col-12 col-sm-6  pe-1">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 col-12 col-sm-6  ps-1">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 col-12 col-sm-6  pe-1">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 col-12 col-sm-6  ps-1">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 col-6 pe-1">
+                                        <label for="exampleInputEmail1" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3 col-3 px-1">
+                                        <label for="exampleInputEmail1" class="form-label">Città</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Scegli</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">USA</option>
+                                            <option value="3">UK</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 col-3 ps-1">
+                                        <label for="exampleInputEmail1" class="form-label">Cap</label>
+                                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+                                    </div>
+                                    <div class="mb-3 col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Inserisci foto</label>
+                                        <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+                                    </div>
+                                    <div class="mb-3 col-12 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <div class="mb-3 col-12 form-check p-0">
+                                        <button type="submit" class="btn btn-success py-0"><small>Salva</small></button>
+                                        <button type="reset" class="btn btn-danger py-0"><small>Reset</small></button>
+                                    </div>
+                                    
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -107,7 +166,7 @@
                 <div class="col-12 d-flex flex-column flex-md-row">
                     <div class="gs-left-content col-12 col-md-8 flex-column">
                         <section id="prossime-classi" class="text-black bg-white">
-                            <div class="card m-2 ">
+                            <div class="card m-2 mt-4">
                                 <div class="fs-5 card-header">
                                     Prossime Classi
                                 </div>
@@ -134,10 +193,10 @@
                                                 <td class="text-center  d-none d-sm-table-cell">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success ">done</span></td>
                                                 <td class="d-flex gap-1 justify-content-center">
-                                                    <div class="gs-square-icon">
+                                                    <div class="gs-square-icon gs-pen">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </div>
-                                                    <div class="gs-square-icon">
+                                                    <div class="gs-square-icon gs-trash">
                                                         <i class="fa-solid fa-trash-can"></i></td>
                                                     </div>
                                                 </td>
@@ -153,10 +212,10 @@
                                                 <td class="text-center  d-none d-sm-table-cell">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success ">done</span></td>
                                                 <td class="d-flex gap-1 justify-content-center">
-                                                    <div class="gs-square-icon">
-                                                        <i class="fa-solid fa-pen"></i>
+                                                    <div class="gs-square-icon gs-pen">
+                                                        <i class="fa-solid fa-pen "></i>
                                                     </div>
-                                                    <div class="gs-square-icon">
+                                                    <div class="gs-square-icon gs-trash">
                                                         <i class="fa-solid fa-trash-can"></i></td>
                                                     </div>
                                                 </td>
@@ -172,10 +231,10 @@
                                                 <td class="text-center  d-none d-sm-table-cell">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success ">done</span></td>
                                                 <td class="d-flex gap-1 justify-content-center">
-                                                    <div class="gs-square-icon">
+                                                    <div class="gs-square-icon gs-pen">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </div>
-                                                    <div class="gs-square-icon">
+                                                    <div class="gs-square-icon gs-trash">
                                                         <i class="fa-solid fa-trash-can"></i></td>
                                                     </div>
                                                 </td>
@@ -191,10 +250,10 @@
                                                 <td class="text-center  d-none d-sm-table-cell">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success ">done</span></td>
                                                 <td class="d-flex gap-1 justify-content-center">
-                                                    <div class="gs-square-icon">
-                                                        <i class="fa-solid fa-pen"></i>
+                                                    <div class="gs-square-icon gs-pen">
+                                                        <i class="fa-solid fa-pen "></i>
                                                     </div>
-                                                    <div class="gs-square-icon">
+                                                    <div class="gs-square-icon gs-trash">
                                                         <i class="fa-solid fa-trash-can"></i></td>
                                                     </div>
                                                 </td>
@@ -210,10 +269,10 @@
                                                 <td class="text-center  d-none d-sm-table-cell">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success ">done</span></td>
                                                 <td class="d-flex gap-1 justify-content-center">
-                                                    <div class="gs-square-icon">
+                                                    <div class="gs-square-icon gs-pen">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </div>
-                                                    <div class="gs-square-icon">
+                                                    <div class="gs-square-icon ">
                                                         <i class="fa-solid fa-trash-can"></i></td>
                                                     </div>
                                                 </td>
@@ -224,18 +283,18 @@
                             </div>
                         </section>
                         <section id="Faq">
-                            <div class="card m-2 ">
+                            <div class="card m-2 mt-4">
                                 <div class="fs-5 card-header text-uppercase text-black">
                                     F.a.q.
                                 </div>
                                 <div class="accordion accordion-flush" id="accordionExample">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseOne">
                                                 Come aggiungere un nuovo studente
                                             </button>
                                         </h2>
-                                        <div id="collapseone" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div id="collapseone" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perferendis provident aut, vel id possimus quas omnis? Magni id ullam quis, consequatur, neque esse facilis, quidem architecto pariatur culpa aperiam.
                                             </div>
@@ -243,11 +302,11 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="heading">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapseOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapseOne">
                                                 Come aggiungere un nuovo studente
                                             </button>
                                         </h2>
-                                        <div id="collapsetwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div id="collapsetwo" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perferendis provident aut, vel id possimus quas omnis? Magni id ullam quis, consequatur, neque esse facilis, quidem architecto pariatur culpa aperiam.
                                             </div>
@@ -255,11 +314,11 @@
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapseOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseOne">
                                                 Come aggiungere un nuovo studente
                                             </button>
                                         </h2>
-                                        <div id="collapsethree" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perferendis provident aut, vel id possimus quas omnis? Magni id ullam quis, consequatur, neque esse facilis, quidem architecto pariatur culpa aperiam.
                                             </div>
@@ -269,10 +328,62 @@
                             </div>
                         </section>
                     </div>
-                    <aside class="gs-rigth-content col-12 col-md-4 bg-black">
-                        ghjklkjhg
-                        <section id="todo">todo</section>
-                        <section id="chart">chart</section>
+                    <aside class="gs-rigth-content col-12 col-md-4 text-black">
+                        
+                        <section id="todo">
+                            <div class="card m-2 mt-4">
+                                <div class="fs-5 card-header">
+                                    To do
+                                </div>
+                                <div class="card m-3">
+                                    <form class="list-group list-group-flush w-100" >
+                                        <div class="form-check list-group-item p-2 px-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                html css basi
+                                            </label>
+                                        </div>
+                                        <div class="form-check list-group-item p-2 px-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Lezioni Bootstrap 5
+                                            </label>
+                                        </div>
+                                        <div class="form-check list-group-item p-2 px-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                js lezione 3
+                                            </label>
+                                        </div>
+                                    </form> 
+                                </div>
+                            </div>
+                        </section>
+                        <section id="chart">
+                            <div class="card m-2">
+                                <div class="card m-3">
+                                    <div class="list-group list-group-flush w-100" >
+                                        <div class="list-group-item p-2 px-4">
+                                            <img class="w-100" src="./img/stats.jpeg" alt="">
+                                            <h4>Utenti attivi</h4>
+                                            <span>Lista degli utenti attivi in piattaforma</span>
+                                        </div>
+                                        <div class="list-group-item p-2 px-4">
+                                            <span>Gennaio: 1200</span>
+                                        </div>
+                                        <div class="list-group-item p-2 px-4">
+                                            <span>Febbraio: 1200</span>
+                                        </div>
+                                        <div class="list-group-item p-2 px-4">
+                                            <span>Marzo: 1200</span>
+                                        </div>
+                                        <div class="list-group-item p-2 px-4">
+                                            <a class="text-decoration-underline text-primary">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </section>
                     </aside>
                 </div>
                 

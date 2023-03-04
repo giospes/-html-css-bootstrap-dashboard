@@ -82,3 +82,18 @@ ul{
     min-width: 110px;
 }
 
+.gs-off-width{
+    width: 550px!important;
+}
+
+.gs-aside-element:hover{
+    background-color:rgb(132, 145, 154);
+}
+
+.gs-pen:hover{
+    background-color: blue;
+}
+
+.gs-trash:hover{
+    background: red;
+}
